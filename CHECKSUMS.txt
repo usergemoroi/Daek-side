@@ -1,0 +1,52 @@
+================================================================================
+                    FILE INTEGRITY CHECKSUMS (SHA256)
+================================================================================
+
+These checksums can be used to verify the integrity of the files in this
+repository and confirm which versions are original vs patched.
+
+================================================================================
+ORIGINAL FILES (in original_binaries/)
+================================================================================
+
+a2e52ffc8813cc6b6b8263a77ad43f752a418a1479add04e5b253d58e79e76dc  original_binaries/libankai.so
+bd2298ec5e068e0e207bf0e8c72e330a13cb2b0cc67db16f11f93de5e0b2ee03  original_binaries/libankaiMod.so
+4a9000e72a54c6c9605c58e6f0295df9e982b20f55989589bccb0777b821875c  original_binaries/classes.dex
+
+================================================================================
+PATCHED FILES (in root directory)
+================================================================================
+
+99e0a1f81a40a248708c1497acbbe7c6589237e279470a685691000a4acf9504  libankai.so
+99e0a1f81a40a248708c1497acbbe7c6589237e279470a685691000a4acf9504  libankai_patched.so
+
+Note: libankai.so and libankai_patched.so should have identical checksums
+      (they are the same file, one is just an explicit copy)
+
+================================================================================
+UNCHANGED FILES (in root directory)
+================================================================================
+
+bd2298ec5e068e0e207bf0e8c72e330a13cb2b0cc67db16f11f93de5e0b2ee03  libankaiMod.so
+bd2298ec5e068e0e207bf0e8c72e330a13cb2b0cc67db16f11f93de5e0b2ee03  libankaiMod_patched.so
+4a9000e72a54c6c9605c58e6f0295df9e982b20f55989589bccb0777b821875c  classes.dex
+
+Note: libankaiMod.so was not patched (no validation logic found)
+      libankaiMod_patched.so is an identical copy for consistency
+      classes.dex is unchanged (original)
+
+================================================================================
+VERIFICATION
+================================================================================
+
+ Patched libankai.so differs from original (139 patches applied)
+ libankaiMod.so is identical to original (no patches needed)
+ classes.dex is identical to original (no patches needed)
+ All original files preserved in original_binaries/ directory
+
+To verify file integrity, run:
+  sha256sum -c CHECKSUMS.txt
+
+================================================================================
+Generated: Sun Feb  8 04:17:45 UTC 2026
+================================================================================
